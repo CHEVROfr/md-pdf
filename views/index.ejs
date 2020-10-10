@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+    <head>
+        <title>bluewrite</title>
+        <meta name="description" content="" />
+
+        <%- include head.ejs %>
+        
+        <link rel="stylesheet" href="/files/css/index.css?v=11" />
+    </head>
+    <body>
+
+        <%- include header.ejs %>
+
+        <div id="content">
+            <form action="/" method="POST" id="converter-form">
+                <p>Choose a theme</p>
+                <div class="checkbox-box">
+                    <input class="cool-checkbox" type="radio" name="theme" value="original" id="original-theme" checked>
+                    <label class="for-cool-checkbox" for="original-theme">original</label>
+
+                    <input class="cool-checkbox" type="radio" name="theme" value="github" id="github-theme">
+                    <label class="for-cool-checkbox" for="github-theme">github</label>
+                </div>
+
+                <p>Choose a theme variant</p>
+                <div class="checkbox-box">
+                    <input class="cool-checkbox" type="radio" name="variant" value="dark" id="dark-variant">
+                    <label class="for-cool-checkbox" for="dark-variant">dark</label>
+
+                    <input class="cool-checkbox" type="radio" name="variant" value="light" id="light-variant" checked>
+                    <label class="for-cool-checkbox" for="light-variant">light</label>
+                </div>
+
+                <span id="button-open-file">Open a file</span>
+                <input type="file" id="file-opener" accept=".markdown, .mdown, .mkdn, .md, .mkd, .mdwn, .mdtxt, .mdtext, .text, .Rmd, .text, .txt">
+
+                <div class="markdown-input-box">
+                    <div class="markdown-input-wrapper">
+                        <textarea name="markdown_content" id="markdown_content" class="markdown-input" placeholder="Paste your markdown here..."></textarea>
+                    </div>
+                </div>
+                <div class="submit-wrapper">
+                    <input type="submit" value="CONVERT" class="submit" />
+                </div>
+            </form>
+        </div>
+
+        <%- include footer.ejs %>
+            
+        <script src="/files/js/index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,56 @@
+@media print {
+    body {
+        padding: 0 !important;
+        background: #0d0d0d;
+    }
+
+    .markdown {
+        margin: 4rem !important;
+        margin-top: 0 !important
+    }
+
+    .markdown h1, .markdown h2, .markdown h3, .markdown h4, .markdown h5, .markdown h6 {
+        color: #fff;
+    }
+
+    .markdown p {
+        color: #fff;
+    }
+
+    .markdown a {
+        color: #fff;
+    }
+
+    .markdown li {
+        color: #fff;
+    }
+
+
+    .markdown table {
+        border-color: #fff;
+    }
+    .markdown table td {
+        color: #fff;
+        border-color: #fff;
+    }
+
+    .markdown table th {
+        color: #fff;
+        border-color: #fff;
+    }
+
+    .markdown .katex-html {
+        color: #fff;
+    }
+}
+
+@page {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+
+    size: A4 portrait;
+}
+@page:first {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}

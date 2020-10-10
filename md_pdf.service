@@ -1,0 +1,22 @@
+[Unit]
+Description=md-pdf, a Markdown to pdf converter from CHEVRO
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+WorkingDirectory=
+ExecStart=/usr/bin/mpn start
+
+Restart=always
+
+RestartSec=10
+
+StandardOutput=syslog
+StandardError=syslog
+
+SyslogIdentifier=md-pdf
+
+Environment=NODE_ENV=production
+
+[Install]
+WantedBy=multi-user.target

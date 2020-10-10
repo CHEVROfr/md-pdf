@@ -1,0 +1,52 @@
+@media print {
+    body {
+        padding: 0 !important;
+        background: #fff;
+    }
+
+    .markdown {
+        margin: 4rem !important;
+        margin-top: 0 !important
+    }
+
+    .markdown p {
+        color: #0d0d0d;
+    }
+
+    .markdown a {
+        color: #0d0d0d;
+    }
+
+    .markdown li {
+        color: #0d0d0d;
+    }
+
+
+    .markdown table {
+        border-color: #0d0d0d;
+    }
+    .markdown table td {
+        color: #0d0d0d;
+        border-color: #0d0d0d;
+    }
+
+    .markdown table th {
+        color: #0d0d0d;
+        border-color: #0d0d0d;
+    }
+
+    .markdown .katex-html {
+        color: #0d0d0d;
+    }
+}
+
+@page {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+
+    size: A4 portrait;
+}
+@page:first {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}

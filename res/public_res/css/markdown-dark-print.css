@@ -1,0 +1,22 @@
+@media print {
+    body {
+        padding: 0 !important;
+        background: #0d0d0d;
+    }
+
+    .markdown {
+        margin: 4rem !important;
+        margin-top: 0 !important
+    }
+}
+
+@page {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+
+    size: A4 portrait;
+}
+@page:first {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}

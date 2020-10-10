@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+  <head>
+    <title><%- errorCode %> | MD - PDF | CHEVRO</title>
+    <meta name="description" content="" />
+    <meta name="robots" content="noindex">
+
+    <%- include head.ejs %>
+    
+    <link rel="stylesheet" href="/files/css/error.css?v=11" />
+  </head>
+  <body>    
+    <div id="content">
+      <p id="errorCode"><%- errorCode %></p>
+      <p id="errorText"><%- errorText %></p>
+      <a href="<%- redirect %>" id="link"><%- redirectText %></a>
+    </div>
+  </body>
+</html>

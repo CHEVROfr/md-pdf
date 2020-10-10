@@ -1,0 +1,13 @@
+header {
+    display: flex;
+    align-items: center;
+    margin: 2rem;
+}
+
+header .logo-wrapper {
+    display: inline-block;
+    background: #000;
+}
+header .logo-wrapper img {
+    width: 9rem;
+}

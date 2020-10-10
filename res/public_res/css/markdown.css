@@ -1,0 +1,164 @@
+.markdown {
+    font-family: "FiraCode";
+    margin-bottom: 50px;
+    margin-top: 35px;
+}
+
+.markdown h1, .markdown h2, .markdown h3, .markdown h4, .markdown h5, .markdown h6 {
+    color: #00b4c4;
+    font-weight: bold;
+}
+
+.markdown p{
+    font-size: 1.15rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    word-wrap: break-word;
+}
+
+.markdown strong {
+    word-wrap: break-word;
+    color: #00b4c4;
+}
+
+.markdown em {
+    word-wrap: break-word;
+    font-style: italic;
+    color: #003f45;
+}
+
+.markdown blockquote {
+    margin-left: 2rem;
+    border-left-style: solid;
+    border-left-color: #00b4c4;
+    border-left-width: 3px;
+    padding-left: 7px;
+}
+
+.markdown pre {
+    background-color: #2e2e2e;
+    padding: 15px;
+    border-radius: 3px;
+    font-size: 1rem;
+    overflow: auto;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.markdown pre code {
+    color: #ffffff;
+    font-family: "FiraCode";
+}
+
+.markdown p>code {
+    background-color: #2e2e2e;
+    padding: 1px;
+    padding-right: 3px;
+    padding-left: 3px;
+    border-radius: 3px;
+    font-family: "FiraCode";
+}
+.markdown li>code {
+    background-color: #2e2e2e;
+    padding: 1px;
+    padding-right: 3px;
+    padding-left: 3px;
+    border-radius: 3px;
+    font-family: "FiraCode";
+}
+
+.markdown pre p {
+    margin: 0;
+}
+
+.markdown a {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.markdown img {
+    max-width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-height: 15rem;
+}
+
+.markdown ul {
+    padding-left: 20px;
+}
+
+.markdown li {
+    color: #fff;
+    font-size: 1.15rem;
+}
+.markdown li>p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.markdown table {
+    font-size: 1.15rem;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid #fff;
+}
+
+.markdown table td {
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.markdown table th {
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/*          TASK LIST             */
+.markdown .task-list-item {
+    position: relative;
+}
+
+.markdown .task-list-item input {
+    margin-right: 25px !important;
+    opacity: 0;
+}
+
+.markdown .task-list-item::before {
+    content: "";
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    border: 1px solid;
+    position: absolute;
+    top: 3px;
+}
+
+.markdown .task-list-item::after {
+    display: inline-block;
+    height: 6px;
+    width: 9px;
+    border-left: 3px solid;
+    border-bottom: 3px solid;
+    border-color: #fff;
+    transform: rotate(-45deg);
+    position: absolute;
+    left: 4px;
+    top: 7px;
+}
+
+.checked::after {
+    content: "";
+}
+
+.markdown .katex-html {
+    color: #fff;
+}
