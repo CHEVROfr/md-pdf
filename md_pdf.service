@@ -5,7 +5,7 @@ Wants=network-online.target
 
 [Service]
 WorkingDirectory=
-ExecStart=/usr/bin/mpn start
+ExecStart=/usr/bin/npm start
 
 Restart=always
 
