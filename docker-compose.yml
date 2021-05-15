@@ -1,0 +1,6 @@
+version: "3.9"
+services:
+  md-pdf:
+    build: .
+    ports:
+      - "${PORT}:${PORT}"
